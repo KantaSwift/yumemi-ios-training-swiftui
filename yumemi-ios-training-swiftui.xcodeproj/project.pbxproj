@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B21E4C8829B1C076002EE12A /* yumemi_ios_training_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E4C8729B1C076002EE12A /* yumemi_ios_training_swiftuiApp.swift */; };
-		B21E4C8A29B1C076002EE12A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E4C8929B1C076002EE12A /* ContentView.swift */; };
+		B21E4C8A29B1C076002EE12A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E4C8929B1C076002EE12A /* HomeView.swift */; };
 		B21E4C8C29B1C077002EE12A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21E4C8B29B1C077002EE12A /* Assets.xcassets */; };
 		B21E4C8F29B1C077002EE12A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21E4C8E29B1C077002EE12A /* Preview Assets.xcassets */; };
 		B21E4C9929B1C077002EE12A /* yumemi_ios_training_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E4C9829B1C077002EE12A /* yumemi_ios_training_swiftuiTests.swift */; };
 		B21E4CA329B1C077002EE12A /* yumemi_ios_training_swiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E4CA229B1C077002EE12A /* yumemi_ios_training_swiftuiUITests.swift */; };
 		B21E4CA529B1C077002EE12A /* yumemi_ios_training_swiftuiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E4CA429B1C077002EE12A /* yumemi_ios_training_swiftuiUITestsLaunchTests.swift */; };
+		B21E4CB729B1D115002EE12A /* CenterControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E4CB629B1D115002EE12A /* CenterControlView.swift */; };
+		B21E4CB929B1D17A002EE12A /* ButtonControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21E4CB829B1D17A002EE12A /* ButtonControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		B21E4C8429B1C076002EE12A /* yumemi-ios-training-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yumemi-ios-training-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21E4C8729B1C076002EE12A /* yumemi_ios_training_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemi_ios_training_swiftuiApp.swift; sourceTree = "<group>"; };
-		B21E4C8929B1C076002EE12A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B21E4C8929B1C076002EE12A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B21E4C8B29B1C077002EE12A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B21E4C8E29B1C077002EE12A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B21E4C9429B1C077002EE12A /* yumemi-ios-training-swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yumemi-ios-training-swiftuiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,8 @@
 		B21E4C9E29B1C077002EE12A /* yumemi-ios-training-swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yumemi-ios-training-swiftuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21E4CA229B1C077002EE12A /* yumemi_ios_training_swiftuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemi_ios_training_swiftuiUITests.swift; sourceTree = "<group>"; };
 		B21E4CA429B1C077002EE12A /* yumemi_ios_training_swiftuiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yumemi_ios_training_swiftuiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B21E4CB629B1D115002EE12A /* CenterControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterControlView.swift; sourceTree = "<group>"; };
+		B21E4CB829B1D17A002EE12A /* ButtonControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,8 @@
 		B21E4C8629B1C076002EE12A /* yumemi-ios-training-swiftui */ = {
 			isa = PBXGroup;
 			children = (
-				B21E4C8729B1C076002EE12A /* yumemi_ios_training_swiftuiApp.swift */,
-				B21E4C8929B1C076002EE12A /* ContentView.swift */,
-				B21E4C8B29B1C077002EE12A /* Assets.xcassets */,
+				B21E4CB229B1CFF5002EE12A /* Resources */,
+				B21E4CB129B1CFEC002EE12A /* Views */,
 				B21E4C8D29B1C077002EE12A /* Preview Content */,
 			);
 			path = "yumemi-ios-training-swiftui";
@@ -125,6 +128,41 @@
 				B21E4CA429B1C077002EE12A /* yumemi_ios_training_swiftuiUITestsLaunchTests.swift */,
 			);
 			path = "yumemi-ios-training-swiftuiUITests";
+			sourceTree = "<group>";
+		};
+		B21E4CB129B1CFEC002EE12A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B21E4CB329B1D03D002EE12A /* Core */,
+				B21E4CB429B1D0E8002EE12A /* Other */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B21E4CB229B1CFF5002EE12A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B21E4C8729B1C076002EE12A /* yumemi_ios_training_swiftuiApp.swift */,
+				B21E4C8B29B1C077002EE12A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B21E4CB329B1D03D002EE12A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B21E4C8929B1C076002EE12A /* HomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B21E4CB429B1D0E8002EE12A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B21E4CB629B1D115002EE12A /* CenterControlView.swift */,
+				B21E4CB829B1D17A002EE12A /* ButtonControlView.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B21E4C8A29B1C076002EE12A /* ContentView.swift in Sources */,
+				B21E4C8A29B1C076002EE12A /* HomeView.swift in Sources */,
+				B21E4CB729B1D115002EE12A /* CenterControlView.swift in Sources */,
+				B21E4CB929B1D17A002EE12A /* ButtonControlView.swift in Sources */,
 				B21E4C8829B1C076002EE12A /* yumemi_ios_training_swiftuiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
