@@ -9,21 +9,21 @@ import SwiftUI
 
 struct CenterControlView: View {
     
-    private var imageWidth: CGFloat {
-        UIScreen.main.bounds.width / 2
+    private enum Const {
+        static let imageWidth = UIScreen.main.bounds.width / 2
     }
-    
+
     var body: some View {
         VStack {
             Image("")
-                .frame(width: imageWidth, height: imageWidth)
+                .frame(width: Const.imageWidth, height: Const.imageWidth)
                 .background(.gray)
             HStack {
                 Text("--")
-                    .frame(width: imageWidth / 2, alignment: .center)
+                    .frame(width: Const.imageWidth / 2, alignment: .center)
                     .foregroundColor(.blue)
                 Text("--")
-                    .frame(width: imageWidth / 2, alignment: .center)
+                    .frame(width: Const.imageWidth / 2, alignment: .center)
                     .foregroundColor(.red)
             }
         }

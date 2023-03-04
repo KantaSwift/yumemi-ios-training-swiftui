@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ButtonControlView: View {
     
-    private var buttonWidth: CGFloat {
-        UIScreen.main.bounds.width / 4
+    private enum Const {
+        static let buttonWidth = UIScreen.main.bounds.width / 4
     }
     
     var body: some View {
@@ -18,13 +18,13 @@ struct ButtonControlView: View {
             Button("Close") {
                 // action
             }
-            .frame(width: buttonWidth)
+            .frame(width: Const.buttonWidth)
             .font(.title3)
             
             Button("Reload") {
                 // action
             }
-            .frame(width: buttonWidth)
+            .frame(width: Const.buttonWidth)
             .font(.title3)
         }
     }
