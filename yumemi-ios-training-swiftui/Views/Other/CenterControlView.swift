@@ -16,6 +16,7 @@ struct CenterControlView: View {
     var body: some View {
         VStack {
             Image("")
+                .resizable()
                 .frame(width: Const.imageWidth, height: Const.imageWidth)
                 .background(.gray)
             HStack {
