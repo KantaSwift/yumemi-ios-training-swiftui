@@ -9,9 +9,14 @@ import SwiftUI
 
 struct HomeView: View {    
     var body: some View {
-        VStack(spacing: 80) {
-            CenterControlView()
-            ButtonControlView()
+        GeometryReader { geometry in
+            VStack {
+                CenterControlView()
+                    .frame(height: 10 + geometry.size.width / 2)
+                ButtonControlView()
+                    .frame(height: 25)
+            }
+            .frame(minWidth: .infinity, )
         }
     }
 }
