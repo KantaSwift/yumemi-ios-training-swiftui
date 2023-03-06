@@ -11,7 +11,7 @@ import SwiftUI
 struct yumemi_ios_training_swiftuiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
